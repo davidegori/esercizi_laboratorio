@@ -1,0 +1,148 @@
+ s_es2
+caso 100
+caso 100
+caso 100
+sottocaso densita 1n
+t =  0.0033152
+it =  40
+rapp =    8.2880e-05
+sottocaso densita 10n
+t =  0.0026560
+it =  25
+rapp =    1.0624e-04
+sottocaso densita 100n
+t =    8.0705e-04
+it =  2
+rapp =    4.0352e-04
+caso 1000
+sottocaso densita 1n
+t =  0.024854
+it =  174
+rapp =    1.4284e-04
+sottocaso densita 10n
+t =  0.0072720
+it =  25
+rapp =    2.9088e-04
+sottocaso densita 100n
+t =  0.023525
+it =  14
+rapp =  0.0016804
+caso 10000
+sottocaso densita 1n
+t =  0.040196
+it =  54
+rapp =    7.4437e-04
+sottocaso densita 10n
+t =  0.056684
+it =  26
+rapp =  0.0021802
+sottocaso densita 100n
+t =  0.24388
+it =  14
+rapp =  0.017420
+>> s_es2
+caso 100
+sottocaso densita 1n
+t =  0.0032310
+it =  36
+rapp =    8.9751e-05
+sottocaso densita 10n
+t =  0.0026162
+it =  24
+rapp =    1.0901e-04
+sottocaso densita 100n
+t =    7.8821e-04
+it =  2
+rapp =    3.9411e-04
+caso 1000
+sottocaso densita 1n
+t =  0.014056
+it =  97
+rapp =    1.4491e-04
+sottocaso densita 10n
+t =  0.0075879
+it =  26
+rapp =    2.9184e-04
+sottocaso densita 100n
+t =  0.023444
+it =  14
+rapp =  0.0016746
+caso 10000
+sottocaso densita 1n
+t =  0.040191
+it =  54
+rapp =    7.4428e-04
+sottocaso densita 10n
+t =  0.056556
+it =  26
+rapp =  0.0021752
+sottocaso densita 100n
+t =  0.24205
+it =  14
+rapp =  0.017290
+>> s_es2
+caso 100
+sottocaso densita 1n
+t =  0.013002
+it =  144
+rapp =    9.0293e-05
+sottocaso densita 10n
+t =  0.0030019
+it =  25
+rapp =    1.2008e-04
+sottocaso densita 100n
+t =    8.2207e-04
+it =  2
+rapp =    4.1103e-04
+caso 1000
+sottocaso densita 1n
+t =  0.0070941
+it =  43
+rapp =    1.6498e-04
+sottocaso densita 10n
+t =  0.0073311
+it =  25
+rapp =    2.9325e-04
+sottocaso densita 100n
+t =  0.024646
+it =  14
+rapp =  0.0017604
+caso 10000
+sottocaso densita 1n
+t =  0.035086
+it =  46
+rapp =    7.6274e-04
+sottocaso densita 10n
+t =  0.059006
+it =  26
+rapp =  0.0022695
+sottocaso densita 100n
+t =  0.24446
+it =  14
+rapp =  0.017462
+caso 100000
+sottocaso densita 1n
+t =  1.5052
+it =  174
+rapp =  0.0086507
+sottocaso densita 10n
+t =  0.92284
+it =  35
+rapp =  0.026367
+sottocaso densita 100n
+t =  3.9259
+it =  14
+rapp =  0.28042
+caso 1000000
+sottocaso densita 1n
+t =  20.442
+it =  179
+rapp =  0.11420
+sottocaso densita 10n
+t =  14.392
+it =  26
+rapp =  0.55354
+sottocaso densita 100n
+t =  107.16
+it =  14
+rapp =  7.6546

@@ -1,2 +1,5 @@
-LabDid/goride.tar
-LabDid/spigot.tar
+**/octave-workspace
+*.tar
+*.log
+*.synctex.gz
+*.aux

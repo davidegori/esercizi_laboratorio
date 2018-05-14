@@ -1,4 +1,5 @@
 \documentclass[a4paper,11pt] {article}
+\usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage[italian]{babel}
 \usepackage{amsfonts}
@@ -24,21 +25,20 @@ a.a. 2017/18
 %--------------------------------
 \line(1,0){150}
 \end{center}
-
-STUDENTE: Gori Davide
+STUDENTE: Gori Davide \\
 MATRICOLA: 550282
 \begin{center}
 	Esercizio sui Grafici
 \end{center}
 
 	Includiamo qui un grafico delle curve di Lissajoux ottenuto prendendo $x = sin(2t)$ e $y = cos(5t)$ con $t$ tra $0$ e $\pi$.
-	
-	\includegraphics[width=\textwidth]{gra_1.jpeg}
-	
+	\begin{center}
+		\includegraphics[width=0.4 \textwidth]{gra_1.jpeg}
+	\end{center}
 	e poi un grafico tridimensionale della seguente funzione di due variabili $z=5 x^2-5 xy$ che mostra anche le linee di livello della funzione, rappresentata nel dominio $[-5, 5] \times [-5, 5]$.
-
-	\includegraphics[width=\textwidth]{gra_2.jpeg}
-	
+	\begin{center}
+		\includegraphics[width=0.4 \textwidth]{gra_2.jpeg}
+	\end{center}
 	Pisa, 7 maggio 2018
 
 \end{document}
