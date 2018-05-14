@@ -1,5 +1,5 @@
 **/octave-workspace
-*.tar
-*.log
-*.synctex.gz
-*.aux
+**/*.tar
+**/*.log
+**/*.synctex.gz
+**/*.aux
