@@ -2,7 +2,7 @@ a:=0;
 b:=0;
 c:=0;
 d:=0;
-x:=550282;
+x:="<n° matricola>";
 
 for i from 1 by 1 to 100000 do
         x:=1-2*frac(1/x)+1/x:

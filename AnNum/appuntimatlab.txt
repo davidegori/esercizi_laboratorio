@@ -1,0 +1,38 @@
+->> prompit
+-variabile ans
+-realmin, realmax, eps (<!> anche a queste variabili posso cambiare valore)
+-esiste variabile vuota []
+-who (visualizzo variabili usate) whos (piu' dettagliata)
+-clc (pulire)
+-format rat, format long (es: format long, pi)
+-help (ex: help format o help help)
+-con ; non stampa risultato
+-clear all(pulisce le variabili)
+-due tipi diversi di file eseguibili: script e function nello script le variabili rimangono dopo l'esecuzione, nella function no
+-end finale nelle funzioni e' inutile
+-help nomefunc visualizza i commenti nella function
+-matrici:
+-- A=[1 2 3; 4 5 6]
+-- zeros(3,2)
+-- ones(3,2)
+-- eye(4)
+-- randn(2,3)
+-- range operator: 1:3:4 (proggresione aritmetica)
+-- linspace(0,2*pi,n)
+-- A(3,4) accede elementi
+-- se assegno valori in matrici in posizioni fuori la matrice matlab la allarga automaticamente(allocazione dinamica)
+-- capisce le operazioni tra matrici, seno di vettore: seno di ogni componente (capisce anche 2*a+1)
+-- A*.B operazione elemento per elemento (in generale esegue operazione vettore per vettore)
+-- trasopsizione a'
+-- length(a), size(A)
+-- diag(V, k)
+-- eig(A)
+-grafici
+-- plot(x,y) disegna (x(i),y(i)) collegandoli con una linea
+-- plot(x, x.^2, '--*')
+-- close all (chiude i precedenti grafici)
+-- hold on (tiene aperti i grafici)
+-- axis('equal')
+-A(v,w) A matrice, v, w vettori (specie di minore)
+-tic, toc
+-
