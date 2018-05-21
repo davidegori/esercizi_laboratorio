@@ -1,0 +1,63 @@
+goride@lab7:~$ maple
+    |\^/|     Maple 9 (IBM INTEL LINUX)
+._|\|   |/|_. Copyright (c) Maplesoft, a division of Waterloo Maple Inc. 2003
+ \  MAPLE  /  All rights reserved. Maple is a trademark of
+ <____ ____>  Waterloo Maple Inc.
+      |       Type ? for help.
+> with(DEtools):
+> k:=0.82;
+                                                                               k := 0.82
+
+> Digits:=20;
+                                                                             Digits := 20
+
+> iniz:=x(0)=k;
+                                                                          iniz := x(0) = 0.82
+
+> equa:=diff(x(t),t)=x(t)*(1+sin(t*x(t)));
+                                                                       d
+                                                               equa := -- x(t) = x(t) (1 + sin(t x(t)))
+                                                                       dt
+
+> sol:=dsolve({equa, iniz},numeric,abserr=0.00000000001,relerr=0.0000000001,maxfun=0); 
+                                                                  sol := proc(x_rkf45)  ...  end proc
+
+> sol(5);
+bytes used=4000168, alloc=3210676, time=0.08
+bytes used=8001136, alloc=4259060, time=0.14
+bytes used=12001644, alloc=4455632, time=0.21
+bytes used=16002076, alloc=4586680, time=0.27
+bytes used=20002956, alloc=4586680, time=0.34
+bytes used=24003236, alloc=4652204, time=0.40
+bytes used=28003556, alloc=4717728, time=0.47
+bytes used=32004444, alloc=4717728, time=0.54
+bytes used=36005184, alloc=4783252, time=0.60
+bytes used=40006676, alloc=4848776, time=0.67
+bytes used=44008312, alloc=4848776, time=0.74
+bytes used=48009028, alloc=4848776, time=0.80
+bytes used=52009200, alloc=4848776, time=0.87
+bytes used=56011836, alloc=4848776, time=0.94
+bytes used=60012824, alloc=4848776, time=1.01
+bytes used=64014476, alloc=4914300, time=1.08
+bytes used=68014632, alloc=4914300, time=1.14
+bytes used=72014916, alloc=4914300, time=1.21
+bytes used=76015468, alloc=4914300, time=1.28
+bytes used=80017152, alloc=4914300, time=1.34
+bytes used=84017528, alloc=4914300, time=1.41
+                                                                [t = 5., x(t) = 28.679792550877819328]
+
+> 
+-----------------------------------------------------------------------------------------------
+octave, lsode:
+LabDid:16> format long
+LabDid:17> t=linspace(0,5,10000000);
+LabDid:18> aa=lsode(@(x,t) (x*(1+sin(t*x))),0.82,t);
+LabDid:19> aa(end)
+ans =  28.6798301661602
+-----------------------------------------------------------------------------------------------
+octave, ode45:
+LabDid:26> format long
+LabDid:27> options=odeset("InitialStep",0.001,"RelTol",0.00000001,"AbsTol",0.0000001,"MaxStep",0.01);
+LabDid:28> [tc,xc]=ode45(@(t,x) (x*(1+sin(t*x))),[0,5],0.82,options);
+LabDid:29> xc(end)
+ans =  28.6798107706588
