@@ -1,0 +1,18 @@
+A=imread('Gatto.png');
+psf=diag((1/61)*ones(21,1),0)+diag((1/61)*ones(20,1),-1)+diag((1/61)*ones(20,1),1);
+psf;
+b=sfoca_conv(A, psf);
+x=gc(b(:,:,1), psf, 500);
+y=gc(b(:,:,2), psf, 500);
+z=gc(b(:,:,3), psf, 500);
+k=x;
+k(:,:,2)=y;
+k(:,:,3)=z;
+imwrite(k,'gc.jpg');
+x1=gcreg(b(:,:,1), psf, 0.0001, 500);
+y1=gcreg(b(:,:,2), psf, 0.0001, 500);
+z1=gcreg(b(:,:,3), psf, 0.0001, 500);
+k1=x1;
+k1(:,:,2)=y1;
+k1(:,:,3)=z1;
+imwrite(k1,'gc_reg.jpg');

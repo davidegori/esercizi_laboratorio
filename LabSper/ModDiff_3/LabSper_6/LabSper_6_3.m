@@ -18,12 +18,14 @@ switch i
 end
 f=@(x, y)[y(2), a*(1-y(1)^2)*y(2)-y(1)];
 y0=[1, 1];
-[x,y] = ode15s(f,[0, 100],y0);
-[a,b] = ode45(f,[0, 10],y0);
+[x,y] = eulerop(f,[0, 100],y0, 0.001);
+[a,b] = ode45(f,[0, 100],y0);
 hold on
-plot(x,y)
-plot(a,b)
-legend("ode15s","ode45")
+plot(x,y(:,1))
+plot(a,b(:,1))
+legend("eulero","ode45")
 title(n)
 
+%Non è stata utilizzata la funzione ode15s percé non è 
+%presente in octave, sostituita con eulero!
 %NOTA: quando si usa eulero i nodi sono equistanziati!
