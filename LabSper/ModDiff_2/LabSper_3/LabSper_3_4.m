@@ -1,10 +1,3 @@
-%l'equazione logistica è del tipo y'=a(t)*y(t)*(1-y(t)/k)
-%dove:
-%a(t)=1/2+cos(2*pi*t) 
-%K=100
-%y0=2
-%quindi b=20, a=0.2
-
 f=@(x,y) (1/2+cos(2*pi*x))*y*(1-0.01*y);
 g=@(x,y) 0.5*y*(1-0.01*y);
 B=[1, 10, 50, 200];
@@ -20,9 +13,3 @@ for i=1:4
 	title(sprintf("caso y0=%d",B(i)))
 	drawnow
 end
-%NOTE:
-%possiamo notare che se y0>K abbiamo una soluzione
-%decrescente, negli altri casi cresce. In generale la
-%soluzione è simile a quella del caso classico
-% a=costante. 
-%

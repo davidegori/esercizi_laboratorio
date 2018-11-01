@@ -13,6 +13,3 @@ for i=1:4
 	legend(sprintf("caso %d",B(i)))
 	drawnow;
 end
-%Si nota che usando RK4 la soluzione è più precisa, in 
-%particolare non si verifica il fenomeno "zig-zag" ù
-%descritto precedentemente.

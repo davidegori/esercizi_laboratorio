@@ -35,7 +35,3 @@ legend("caso a)","caso b)")
 title("(y1, y2, y3)")
 print('-djpeg','6_2_4.jpeg');
 clf
-
-%NOTE: notiamo che y1 e y2 si hanno comportamenti
-%diversi per i due dati iniziali, mentre y3 ha un 
-%comportamento più simile nelle due sperimentazioni

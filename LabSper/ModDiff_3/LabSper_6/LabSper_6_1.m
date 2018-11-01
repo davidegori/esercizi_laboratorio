@@ -1,11 +1,10 @@
 %Con facili conti si ottiene che l'equazione differenziale
-%è la seguente:
+%e' la seguente:
 %[z1pp, z2pp, z3pp]=
 %[z1*(g*z3-(z1p^2+z2p^2+z3p^2))/(z1^2+z2^2+z3^2),
 %z2*(g*z3-(z1p^2+z2p^2+z3p^2))/(z1^2+z2^2+z3^2),
 %z3(g*z3-(z1p^2+z2p^2+z3p^2))/(z1^2+z2^2+z3^2)-g]
 %Che, trasformata come dovuto, diventa:
-%[y1p, y2p, y3p, y4p, y5p, y6p]=
 g=9.8;
 f=@(x, y)[y(4), y(5), y(6), y(1)*(g*y(3)-(y(4)^2+y(5)^2+y(6)^2))/(y(1)^2+y(2)^2+y(3)^2), y(2)*(g*y(3)-(y(4)^2+y(5)^2+y(6)^2))/(y(1)^2+y(2)^2+y(3)^2), y(3)*(g*y(3)-(y(4)^2+y(5)^2+y(6)^2))/(y(1)^2+y(2)^2+y(3)^2)-g];
 y0=[0, 1, 0, 0.8, 0, 1.2];
@@ -47,11 +46,3 @@ m=b(:,1).^2+b(:,2).^2+b(:,3).^2-ones(length(a),1);
 r=max(abs(m))
 plot3(b(:,1), b(:,2), b(:,3))
 title(n)
-%Valori residuo a seconda dei casi:
-%1) r = 0.44791
-%2) r = 0.043485
-%3) r = 4.7988e-06
-%4) r = 4.8007e-10
-%5) r = 0.0092088
-%6) r = 0.55712
-%7) r = 1.0655e-04

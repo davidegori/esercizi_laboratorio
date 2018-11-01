@@ -13,7 +13,3 @@ for i=1:4
 	legend(sprintf("caso %d",B(i)))
 	drawnow;
 end
-%Commento: Se uso un passo troppo grande ottengo che la 
-%funzione esce da [0, 1] e si ha un comportamento a
-%"zig-zag" dovuto al fatto che la derivata cambia segno
-%ad ogni passo
